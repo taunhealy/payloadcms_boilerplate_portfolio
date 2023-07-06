@@ -1,4 +1,8 @@
 import type { CollectionConfig } from 'payload/types'
+import { BlogContent } from '../blocks/BlogContent'
+import { BlogMarkdown } from '../blocks/BlogMarkdown'
+import { CaseStudiesHighlight } from '../blocks/CaseStudiesHighlight'
+import { CaseStudyCards } from '../blocks/CaseStudyCards'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
@@ -32,7 +36,7 @@ export const Pages: CollectionConfig = {
               name: 'layout',
               type: 'blocks',
               required: true,
-              blocks: [],
+              blocks: [BlogContent, BlogMarkdown, CaseStudiesHighlight, CaseStudyCards],
             },
           ],
         },

@@ -1,5 +1,4 @@
 import { Field } from 'payload/types';
-import { Type as PageType } from '../collections/Pages';
 
 export type Type = {
   type: 'page' | 'custom'

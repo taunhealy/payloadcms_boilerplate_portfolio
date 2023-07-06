@@ -3,7 +3,7 @@ import { CollectionConfig } from 'payload/types';
 const Items: CollectionConfig = {
   slug: 'items',
   admin: {
-    useAsTitle: 'name',
+    useAsTitle: 'title',
   },
   access: {
     read: () => true,
@@ -12,6 +12,7 @@ const Items: CollectionConfig = {
     {
       name: 'name',
       type: 'text',
+          
     },
     {
       name: 'description',
@@ -19,6 +20,7 @@ const Items: CollectionConfig = {
     },
     {
       name: 'category',
+      label: 'Portfolio Category',
       type: "relationship",
       relationTo: "portfolioCategories",
     },

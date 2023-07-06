@@ -3,7 +3,7 @@ import { CollectionConfig } from 'payload/types';
 const PortfolioCategories: CollectionConfig = {
   slug: 'portfolioCategories',
   admin: {
-    useAsTitle: 'title',
+    useAsTitle: 'name',
   },
   access: {
     read: () => true,
@@ -11,7 +11,7 @@ const PortfolioCategories: CollectionConfig = {
   fields: [
     {
       name: 'name',
-      label: 'Portfolio Categories',
+      label: 'Portfolio Category',
       type: 'text',
     },
   ],
