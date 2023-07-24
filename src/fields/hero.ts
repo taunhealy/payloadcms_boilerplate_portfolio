@@ -1,7 +1,6 @@
 import type { Field } from 'payload/types'
 
 import linkGroup from './linkGroup'
-import livestreamFields from './livestreamFields'
 import label from './richText/label'
 import largeBody from './richText/largeBody'
 
@@ -33,13 +32,8 @@ export const hero: Field = {
           label: 'Home',
           value: 'home',
         },
-        {
-          label: 'Livestream',
-          value: 'livestream',
-        },
       ],
     },
-    livestreamFields,
     {
       name: 'richText',
       type: 'richText',

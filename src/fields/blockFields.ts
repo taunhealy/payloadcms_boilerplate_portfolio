@@ -25,5 +25,3 @@ export const blockFields = ({ name, fields, overrides }: Args): Field =>
     },
     overrides,
   )
-
-  console.log(blockFields);

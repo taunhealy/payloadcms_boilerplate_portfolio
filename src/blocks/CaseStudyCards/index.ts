@@ -2,6 +2,7 @@ import type { Block } from 'payload/types'
 
 import { blockFields } from '../../fields/blockFields'
 import richText from '../../fields/richText'
+import { CaseStudies } from '../../collections/CaseStudies'
 
 export const CaseStudyCards: Block = {
   slug: 'caseStudyCards',

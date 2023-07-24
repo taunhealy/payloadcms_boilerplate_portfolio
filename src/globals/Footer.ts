@@ -1,11 +1,13 @@
 import type { GlobalConfig } from 'payload/types'
 
+import { isAdmin } from '../access/isAdmin'
 import link from '../fields/link'
 
 export const Footer: GlobalConfig = {
   slug: 'footer',
   access: {
     read: () => true,
+    update: isAdmin,
   },
   fields: [
     {
@@ -18,7 +20,9 @@ export const Footer: GlobalConfig = {
           name: 'navItems',
           type: 'array',
           fields: [
-            link
+            link({
+              appearances: false,
+            }),
           ],
         },
       ],
