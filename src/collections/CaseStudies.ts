@@ -1,5 +1,4 @@
 import type { CollectionConfig } from 'payload/types'
-import { slugField } from '../fields/slug'
 import richText from '../fields/richText'
 import largeBody from '../fields/richText/largeBody'
 import { formatPreviewURL } from '../utilities/formatPreviewURL'
