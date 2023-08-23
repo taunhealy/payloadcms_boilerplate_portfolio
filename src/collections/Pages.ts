@@ -1,6 +1,8 @@
 import type { CollectionConfig } from 'payload/types'
 import { CaseStudiesHighlight } from '../blocks/CaseStudiesHighlight'
 import { CaseStudyCards } from '../blocks/CaseStudyCards'
+import { CardGrid } from '../blocks/CardGrid'
+import { slugField } from '../fields/slug'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
@@ -33,12 +35,13 @@ export const Pages: CollectionConfig = {
             {
               name: 'layout',
               type: 'blocks',
-              required: true,
-              blocks: [CaseStudiesHighlight, CaseStudyCards],
+              required: false,
+              blocks: [CaseStudiesHighlight, CaseStudyCards, CardGrid],
             },
           ],
         },
       ],
     },
+    slugField(),
   ],
 }
